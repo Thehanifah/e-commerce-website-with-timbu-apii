@@ -18,13 +18,12 @@ function App() {
   const [isSearching, setIsSearching] = useState(false);
 
 
-
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const organizationId = process.env.REACT_APP_ORGANISATION_ID; 
         const appId = process.env.REACT_APP_APP_ID; 
-        const apiKey =process.env.REACT_APP_API_KEY; 
+        const apiKey = process.env.REACT_APP_API_KEY; 
         const response = await axios.get('https://api.timbu.cloud', {
           params: {
             organization_id: organizationId,
@@ -43,8 +42,7 @@ function App() {
           Qty: item.available_quantity,
           current_price: item.current_price && item.current_price[0] && item.current_price[0].USD && item.current_price[0].USD[0] !== null ? item.current_price[0].USD[0] : 'N/A',
           photoUrl: item.photos && item.photos[0] ? `https://api.timbu.cloud/images/${item.photos[0].url}` : '',
-          categories: item.categories.map(category => category.name),
-         
+          categories: item.categories ? item.categories.map(category => category.name) : [],
         }));
         setProducts(data);
         console.log(data)
@@ -53,7 +51,7 @@ function App() {
         console.error('Error fetching products:', error);
       }
     };
-
+  
     fetchProducts();
   }, []);
 
