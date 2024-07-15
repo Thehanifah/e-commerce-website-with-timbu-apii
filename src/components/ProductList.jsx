@@ -7,7 +7,6 @@ const ProductList = ({ products, filteredProducts }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 12;
 
-  // Ensure filteredProducts is defined and an array before using it
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts && Array.isArray(filteredProducts)
@@ -19,7 +18,7 @@ const ProductList = ({ products, filteredProducts }) => {
   return (
     <div className="container-box">
       <div className="grid-container">
-        {products.map(product => (
+        {currentProducts.map(product => (
           <div className="grid-item" key={product.id}>
             <ProductCard product={product} />
           </div>
@@ -49,3 +48,4 @@ const ProductList = ({ products, filteredProducts }) => {
 };
 
 export default ProductList;
+

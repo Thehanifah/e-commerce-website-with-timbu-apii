@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import Shop from './components/Shop';
 import Navbar from './components/Navbar files/Navbar';
@@ -17,9 +17,9 @@ function App() {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [isSearching, setIsSearching] = useState(false);
 
-  const organizationId = process.env.REACT_APP_ORGANISATION_ID;
-  const appId = process.env.REACT_APP_APP_ID;
-  const apiKey = process.env.REACT_APP_API_KEY;
+    const organizationId = process.env.REACT_APP_ORGANISATION_ID;
+        const appId = process.env.REACT_APP_APP_ID;
+        const apiKey = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -128,12 +128,12 @@ function App() {
   
 
   return (
-    <CartProvider>
-      <Router>
+      <CartProvider>
+      <BrowserRouter>
         <div className="App">
           <Navbar products={products} onSearchStateChange={setIsSearching} onSearch={handleSearch} />
           <Routes>
-          <Route exact path="/" element={<Homepage products={products} isSearching={isSearching} filteredProducts={filteredProducts} setFilteredProducts ={setFilteredProducts} />} />
+            <Route path="/" element={<Homepage products={products} isSearching={isSearching} filteredProducts={filteredProducts} setFilteredProducts ={setFilteredProducts} />} />
             <Route path="/shop" element={<Shop products={products} />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<CheckoutForm />} />
@@ -142,8 +142,9 @@ function App() {
             <Route path="/product/:productId" element={<ProductDetail products={products} />} />
           </Routes>
         </div>
-      </Router>
-    </CartProvider>
+      </BrowserRouter>
+      </CartProvider>
+   
   );
 }
 
