@@ -25,7 +25,7 @@ function App() {
         const organizationId = process.env.REACT_APP_ORGANISATION_ID; 
         const appId = process.env.REACT_APP_APP_ID; 
         const apiKey =process.env.REACT_APP_API_KEY; 
-        const response = await axios.get('https://timbu-get-all-products.reavdev.workers.dev/ ', {
+        const response = await axios.get('https://api.timbu.cloud', {
           params: {
             organization_id: organizationId,
             reverse_sort: false,
