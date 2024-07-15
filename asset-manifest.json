@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/e-commerce-website-with-timbu-apii/static/css/main.427410a7.css",
+    "main.js": "/e-commerce-website-with-timbu-apii/static/js/main.d5360a2a.js",
+    "static/media/hero.png": "/e-commerce-website-with-timbu-apii/static/media/hero.8c765487c83c29401573.png",
+    "static/media/logo.png": "/e-commerce-website-with-timbu-apii/static/media/logo.111fabac0012d7d9934b.png",
+    "index.html": "/e-commerce-website-with-timbu-apii/index.html",
+    "main.427410a7.css.map": "/e-commerce-website-with-timbu-apii/static/css/main.427410a7.css.map",
+    "main.d5360a2a.js.map": "/e-commerce-website-with-timbu-apii/static/js/main.d5360a2a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.427410a7.css",
+    "static/js/main.d5360a2a.js"
+  ]
+}
