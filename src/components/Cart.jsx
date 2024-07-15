@@ -3,11 +3,11 @@ import { CartContext } from './Cartcontext';
 import './Cart.css';
 import Footer from './Footer';
 import { IoCartOutline } from "react-icons/io5";
-import { useNavigate } from 'react-router-dom';
+
 
 const Cart = () => {
-  const { cart, setCart, clearCart } = useContext(CartContext);
-  const navigate = useNavigate();
+  const { cart, setCart, } = useContext(CartContext);
+  
 
   const totalPrice = cart.reduce((acc, item) => acc + item.current_price * item.quantity, 0);
   const totalWithAdditionalPercentage =  Math.round(totalPrice * 1.07 * 100) / 100;; 
@@ -28,9 +28,7 @@ const Cart = () => {
 
     
   };
-  const handleCheckout = () => {
-    navigate('/checkout'); 
-  };
+
 
   return (
 
@@ -68,7 +66,7 @@ const Cart = () => {
                     <span>{item.quantity}</span>
                     <button onClick={() => handleIncreaseQuantity(index)}>+</button>
                   </div>
-                  </div>
+              </div>
                   
             ))}
             <div className='btn-shop'><button className='Shop-again'><a href="/Shop">Continue Shopping</a></button> </div> 

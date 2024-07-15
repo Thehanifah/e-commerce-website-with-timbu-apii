@@ -1,7 +1,7 @@
 import React from 'react';
 import './Productcard.css';
 import { useNavigate } from 'react-router-dom';
-import Footer from './Footer.jsx';
+
 
 const ProductCards = ({ product }) => {
   const navigate = useNavigate();

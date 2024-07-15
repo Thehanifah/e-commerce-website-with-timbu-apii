@@ -24,15 +24,15 @@ function Footer() {
      
     <div class="ul-container"> 
   
-    <div><a href="#" >Terms and Conditions</a></div> 
+    <div><a href="/"  >Terms and Conditions</a></div> 
    
-    <div><a href="#" >Privacy</a></div>
+    <div><a href="/" >Privacy</a></div>
   
-     <div><a href="#" >Cookies</a></div>
+     <div><a href="/" >Cookies</a></div>
   
-     <div><a href="#" >Refund</a></div>
+     <div><a href="/" >Refund</a></div>
   
-    <div><a href="#" >License</a></div>
+    <div><a href="/" >License</a></div>
     </div>
     </div>
 
@@ -48,13 +48,14 @@ function Footer() {
 
     <div class=" ul-container1"> 
  
-  <a href="#" ><IoLogoInstagram className='media' /></a>
+  <a href="https://www.instagram.com/" ><IoLogoInstagram className='media' /></a>
  
-  <a href="#" ><FaXTwitter className='media' /></a>
+  <a href="https://twitter.com/home" ><FaXTwitter className='media' /></a>
  
-  <a href="#" ><FaWhatsapp className='media' /></a>
+  <a href="https://web.whatsapp.com/" ><FaWhatsapp className='media' /></a>
  
-  <a href="#" ><RiTiktokFill className='media'/></a>
+ 
+  <a href="https://www.tiktok.com/" ><RiTiktokFill className='media'/></a>
 
  </div>
   </div>
