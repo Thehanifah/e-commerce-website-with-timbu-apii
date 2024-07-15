@@ -16,7 +16,7 @@ function Footer() {
 
       <div class="footer-cont">
      <div class="footerbrand"> 
-     <a className="navbar-brand" href="">
+     <a className="navbar-brand" href="/">
         <img src={Logo} alt="Logo" width="auto" height="40" className="d-inline-block align-text-center" />
         <span className="d-inline-block align-text-top ">RareWrld</span>
       </a>
@@ -65,19 +65,3 @@ function Footer() {
 }
 
 export default Footer;
-
-
-{/* <div class="d-flex mb-3">
-  <div class="p-2">Flex item</div>
-  <div class="p-2">Flex item</div>
-  <div class="ms-auto p-2">Flex item</div>
-</div> */}
-
-
-{/* <div class="d-flex justify-content-md-between footer-cont">
-      <div class="row"><div class="col-auto me-auto"> 
-      
-      </div>
-    <div class="col-auto"></div>
-     </div>
-     </div> */}
