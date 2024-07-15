@@ -1,0 +1,368 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.navbar{
+    border-bottom: 1px solid #F2EDE8;
+    margin: 15px 4% 7px 4% !important;
+   }
+
+.search{
+    border-radius: 25px;
+    background-color: #F2EDE8;
+    width: 40%;
+    padding: 0.5em 1em;
+
+}
+.nav-link span{
+    color: black;
+    display: none;
+    font-size: 1em;
+}
+
+ .navbar-ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0;
+}
+
+
+.navbar-ul li{
+   display: inline-block;
+   margin: 0 20px;
+   color: #966E4F;
+   
+}
+
+
+
+.navbar-ul li:last-child{
+    margin-right: 0;
+ }
+
+ .navbar-ul li:first-child{
+    margin-left: 0;
+ }
+
+
+.nav-item-icon{
+    background-color: #F2EDE8;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 2.5em;
+}
+
+.cart-number{
+  background-color: #b3261e;
+  color: #fff!important;
+  position: absolute;
+  font-size: 0.4em;
+  border-radius: 50%;
+  padding: 0.2em 0.5em;
+  top: 7em;
+  right: 25em;
+}
+
+
+#Search-icon, #searchInput::placeholder{
+    color:#966E4F;
+    background-color: none;
+}
+
+.searchIcon{
+    font-size: 1.5em;
+    background-color: #F2EDE8;
+    margin-right: 0.5em;
+    color: #966E4F;  
+}
+
+.searchInput{
+    outline: none;
+    border: none;
+    background-color: #F2EDE8;
+    width: 80%;
+}
+
+
+
+#close-icon{
+    font-size: 1.5em;
+    background-color: #F2EDE8;
+    float: inline-end;
+}
+
+.navbar-brand{
+font-family: "Lancelot", serif;
+padding: 0%;
+color: #966E4F;
+      padding: 0;
+    margin: 0;
+    height: 2.6em ;
+}
+
+.navbar-brand span{
+    color: #966E4F;
+    font-size: 2.5em;
+    line-height: 38px;
+}
+
+.navbar-toggler-1, .toggle-open{
+cursor: pointer;
+font-size: 1.5em;
+    display: none;
+    border: none;
+    background: none;
+}
+
+.navbar button{
+    border: none;
+}
+
+
+.navbar-toggler-2, .toggle-close{
+cursor: pointer;
+font-size: 1.5em;
+    display: none;
+    border: none;
+    background: none;
+}
+
+.navbar-toggler-3,.searchIcon-1{
+    cursor: pointer;
+    font-size: 1.2em;
+        /* display: none; */
+        border: none;
+        background: none; 
+        display: none;
+}
+
+.close-icon{
+    cursor: pointer;
+}
+
+/* .navbar button{
+padding: 5px;
+cursor: pointer;
+font-size: 3em;
+    display: none;
+    border: none;
+    background: none;
+  } */
+
+.toggle-open, .toggle-close, .searchIcon-1{
+    color: #966E4F;
+    
+
+}
+
+
+
+/* .navbar-ul.show {
+    display: flex;
+    flex-direction: column;
+  }*/
+  
+  /* .search.show #search-icon {
+    display: block;
+  }  */
+
+@media (max-width: 1024px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       position: absolute;
+       height: 5em;
+       width: auto;
+      }
+
+      .navbar-brand span{
+        font-size: 1.5em;
+        line-height: 30px;
+    }
+
+   
+
+    .searchIcon, .search {
+        display: none;
+      
+    }
+
+    .searchIcon{
+        cursor: pointer;
+    }
+
+     /* #searchInput, #close-icon{
+        display: none;
+    } */
+
+       .navbar-ul, .toggle-close {
+        display: none;
+      }
+    
+      .navbar-toggler-3,.searchIcon-1{
+        display: block;
+        position: absolute;
+        top: 0.7em;
+        right: 1em;
+      }
+
+      .navbar-toggler-1, .toggle-open{
+        display: block;
+        
+      }
+
+    
+    
+      .navbar.active .navbar-ul {
+        display: block;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        width: 92vw;
+        background-color: #fff; /* Adjust background color */
+        z-index: 300;
+       
+      }
+
+      .navbar-ul.show .cart-number{
+         display: none;
+       
+      }
+    
+      .navbar.active .nav-link span{
+        color: black;
+        display: block;
+        font-family: 'montserrat' serif;
+        z-index: 300;
+        padding: 0.5em;
+    }
+
+    .navbar.active .navbar-toggler-2 .toggle-close {
+       top: 0.4em;
+    }
+
+    .navbar.active .navbar-ul {
+       padding-top: 5em;
+       background-color: #FCFAF7;;;
+       z-index: 300;
+       width: 92vw;
+    }
+
+  .searchIcon-1{
+    position: absolute;
+    top: 0.7em;
+  }
+
+      .navbar.active .navbar-ul li {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 10px 20px; 
+      }
+    
+      .navbar.active .navbar-ul li a {
+        display: flex;
+        align-items: center;
+      }
+    
+      .navbar.active .navbar-toggler-2 .toggle-close {
+        display: block;
+        
+      }
+
+
+     .navbar.active .navbar-toggler-2, .toggle-close{
+                display: block;
+                position: absolute;
+         top: 0.3em;
+        right: 0;
+            
+        }
+      
+        .navbar.active .searchIcon {
+            display: none;
+        }
+
+
+      .navbar.active{
+        position: relative;
+      }
+
+      /* .navbar.active .navbar-toggler{
+        display: block;
+        
+       
+      } */
+    
+      .navbar.active .navbar-toggler-1 .toggle-open {
+        display: none;
+      }
+
+      .search.active, .searchIcon.active, .searchInput.active, .close-Icon.active{
+        display: block;
+      }
+
+      .search.active{
+        position: absolute;
+        top: 5em;
+       right: 0;
+       z-index: 350;
+       
+      }
+
+      .searchInput.active::placeholder{
+        color:#966E4F;
+    }
+
+    
+      .searchIcon.active{
+        font-size: 1em;
+        background-color: #F2EDE8;
+       margin-right: 0.5em;
+        color: #966E4F; 
+      }
+
+      .search.active{
+        width: 100%;
+      }
+      .search.active input{
+        outline: none;
+        border: none;
+        background-color: #F2EDE8;
+        width: 80%;
+    }
+
+
+
+
+    #Search-icon{
+        font-size: 1.5em;
+        
+        background-color: #F2EDE8;
+       margin-right: 0.5em;
+        color: #966E4F;  
+    }
+    
+      /* .navbar.active .search {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      } */
+    
+      /* .navbar.active #searchInput {
+        display: block;
+        width: 90%;
+      } */
+      }
+  
+
+
+
+
+
+    

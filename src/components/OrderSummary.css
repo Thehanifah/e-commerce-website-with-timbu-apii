@@ -1,0 +1,161 @@
+.order-summary{
+    max-width: 990px;
+    width:90vw;
+    margin:3% auto;
+    border-radius: 20px;
+    position: relative;
+    box-shadow:    0 -4px 3px -4px rgba(0, 0, 0, 0.3), 
+    0 4px 4px -4px rgba(0, 0, 0, 0.3); 
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'montserrat';
+    padding-bottom: 1em;
+   
+}
+
+.summary{
+    font-family: 'montserrat';
+    color: #966E4F;
+}
+
+#products{
+    display: flex;
+    height: 95px;
+    width: 990px;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    max-width: 90vw;
+    padding:  0 1em;
+  
+}
+
+#productinfo{
+    max-width: 80%;
+    display: flex;
+  
+    
+}
+
+.proceed-btn{
+    padding: 0.5em 2em ;
+    font-family: 'montserrat';
+    border-radius: 20px;
+    border: 0;
+    background-color: #E88030;
+    color: #fff;
+    
+}
+
+
+#imgdiv{
+    aspect-ratio: 1;
+    height: 100%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+    box-shadow:    0 -4px 3px -4px rgba(0, 0, 0, 0.3), 
+    0 4px 4px -4px rgba(0, 0, 0, 0.3); 
+    background-color: #fff; 
+}
+
+#imageprofile{
+    height: 100%;
+    position: relative;
+     
+}
+
+#item-details{
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.summary{
+    background-color: #F2EDE8;
+    width: 100%;
+    text-align: center;
+    padding: 1.2em;
+    border-radius: 20px;
+}
+
+
+.quantity-total{
+   
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.quantity-total p{
+    text-align: right;
+}
+
+
+#totals{
+    width: 990px; 
+    max-width: 90vw;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.proceed-btn:hover{
+    padding: 0.5em 2em ;
+    font-family: 'montserrat';
+    border-radius: 20px;
+    border: 0;
+    background-color: #F2EDE8;
+    color: #966E4F; 
+}
+
+
+@media (max-width:498px){
+     
+    .quantity-total p{
+        font-size: 1em;
+      
+        
+    }
+}
+
+@media (max-width:460px){
+     
+    .quantity-total p{
+        font-size: 0.8em;
+       
+    }
+}
+
+@media(max-width:624px){
+    .proceed-btn{
+        padding: 0.5em 1.5em ;
+        font-family: 'montserrat';
+        border-radius: 20px;
+        font-size: 0.8em;
+        border: 0;
+        background-color: #E88030;
+        color: #fff;
+    }
+
+    #totals{
+        margin:1% 4%; 
+        display: flex;
+        justify-content: space-between;
+    }
+    .quantity-total p{
+        font-size: 1em;
+    }
+}
+
+

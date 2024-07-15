@@ -1,0 +1,137 @@
+.checkout-form{
+    max-width: 990px;
+    width:90vw;
+    margin:3% auto;
+    border-radius: 20px;
+    position: relative;
+    box-shadow:    0 -4px 3px -4px rgba(0, 0, 0, 0.3), 
+    0 4px 4px -4px rgba(0, 0, 0, 0.3); 
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 1em;
+    
+}
+    
+
+.checkoutheader{
+    background-color: #F2EDE8;
+    border-radius: 20px;
+    padding:  0.5em;
+    width: 80%;
+    font-family: 'montserrat';
+   
+    color:#966E4F;
+  }
+
+
+  form{
+    width: 80%;
+  }
+
+ form input[type ='text']{
+    padding-left: 1em;
+    color: #966E4F;
+    background-color: #FFF;
+ }
+
+ form input[type ='text']:active{
+    padding-left: 1em;
+    color: #966E4F;
+    background-color: #FFF;
+ }
+
+ form input[type ='email']{
+    padding-left: 1em;
+    color: #966E4F;
+    background-color: #FFF;
+ }
+
+ form input:focus{
+    background-color: #FFF;
+    border: 1px solid groove #E88030;
+ }
+
+ 
+  form input{
+    width: 100%;
+    border-radius: 20px;
+    height: 4em;
+    margin: 1em 0;
+    border: none;
+    background-color: #F2EDE8;
+    box-shadow: 2px black;
+    color:#966E4F;
+  }
+
+  .Continue{
+    float: inline-end;
+    margin: 1em;
+    padding: 0.5em 2em ;
+    font-family: 'montserrat';
+    border-radius: 20px;
+    border: 0;
+    background-color: #E88030;
+    color: #fff;
+  }
+
+  .Continue:hover{
+    padding: 0.5em 2em ;
+    font-family: 'montserrat';
+    border-radius: 20px;
+    border: 0;
+    background-color: #F2EDE8;
+    color: #966E4F; 
+  }
+
+  form input::placeholder{
+    font-family: 'montserrat';
+    padding: 1em;
+    color:#966E4F;
+  }
+  form input:active{
+    border: 1px #E88030;
+    border-style: groove;
+  }
+
+  form input:valid{
+    background-color: #F2EDE8;
+    color: #966E4F; 
+  }
+
+  
+
+
+  form input:hover{
+    border: 1px #E88030;
+    border-style: groove;
+    font-family: 'montserrat';
+  }
+
+  @media(max-width:1024px){
+    .Continue{
+        float: initial;
+        margin: 1em 0;
+        padding: 0.5em 1.5em ;
+        font-family: 'montserrat';
+       font-size: 0.8em;
+  }
+  .checkoutheader{
+ font-size: 1.8em;
+ padding:  0.5em;
+  }
+  form input{
+   
+    height: 2.5em;
+
+}
+
+
+form input::placeholder{
+    font-size:0.8em;
+    padding: 1em;
+    color:#966E4F;
+  }
+}

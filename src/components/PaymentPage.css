@@ -1,0 +1,36 @@
+.payment-page{
+    max-width: 990px;
+    width:90vw;
+    padding-top: 3em;
+    margin:3% auto;
+    border-radius: 20px;
+    position: relative;
+    box-shadow:    0 -4px 3px -4px rgba(0, 0, 0, 0.3), 
+    0 4px 4px -4px rgba(0, 0, 0, 0.3); 
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'montserrat';
+    padding-bottom: 3em;
+}
+
+.pay{
+    padding: 0.5em 2em ;
+    font-family: 'montserrat';
+    border-radius: 20px;
+    border: 0;
+    text-decoration: none;
+    background-color: #F2EDE8;
+    color: #966E4F;
+}
+
+.pay:hover{
+    padding: 0.5em 2em ;
+    font-family: 'montserrat';
+    border-radius: 20px;
+    border: 0;
+    background-color: #E88030;
+    color: #fff;
+}

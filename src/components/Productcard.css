@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.cards {
+
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    border: none !important;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+
+  .card-body{
+ height: fit-content;
+  }
+
+  .card-img {
+    max-height: 70%;
+    width: auto;
+    object-fit: contain;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 12px 12px 12px 12px!important;
+    
+
+  } 
+
+  .product-img-container{
+    background-color: #fff;
+    color: #fff;
+    width: 314px;
+    height: 392px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+    box-shadow:    0 -4px 3px -4px rgba(0, 0, 0, 0.3), 
+    0 4px 4px -4px rgba(0, 0, 0, 0.3); 
+  }
+
+  .quick-look {
+    display: none; /* Hide by default */
+    position: absolute;
+    margin-top: 1em;
+    transition: opacity 0.3s ease-in-out;
+    padding: 0.5em 2em ;
+    font-family: 'montserrat';
+    border-radius: 20px;
+    border: 0;
+    background-color: #E88030;
+    color: #fff;
+    z-index: 3; 
+    align-self: center;
+    cursor: pointer;
+    z-index: 1; /* Ensure it's above other content */
+    transform: translateY(0); /* Initially translate down by 0 */
+    transition: transform 0.3s ease-in-out;
+    
+  }
+
+  .cards:hover .quick-look {
+    display: block;
+  
+    opacity: 1;
+  } 
+
+
+  .checkout a{
+    text-decoration: none;
+    font-family: 'montserrat';
+    background-color: #E88030;
+    color: #fff;
+
+  }
+  
+  .popup{
+    position: fixed;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E88030;
+    color: #FCFAF7;
+    padding: 0.5em 2em;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    animation: fadeOut 1s ease-in-out forwards;
+  }
+
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  @media(max-width:600px){
+    .popup{
+      padding: 0.5em 1.5em;
+      font-size: 0.5em;
+      top: 6%;
+  }}
+  
+  
+
+  .card-text {
+    font-size: 1rem;
+    color: #E88030;
+    margin-bottom: 3px;
+  }
+
+  .card-title {
+    font-size: 1em;
+    margin-bottom: 8px;
+    font-family: 'montserrat';
+    font-weight: 600;
+    margin: 1em 0 0 0!important;
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+  }
+
+
+  .card-body {
+    padding: 0!important;
+  }
+  
+
+  
+  
+  @media(max-width:1097px){
+   
+    .product-img-container{
+    background-color: #fff;
+    color: #fff;
+    height: 350px;
+    width: 100%px;
+  }
+
+    
+    }
+
+  @media (max-width:980px){
+    .product-img-container{
+      max-height: 70%;
+      max-width: 100%;
+      display: flex;
+      border-radius: 20px;
+      position: relative;
+      box-shadow:    0 -4px 3px -4px rgba(0, 0, 0, 0.3), 
+      0 4px 4px -4px rgba(0, 0, 0, 0.3); 
+    }
+
+    .card-img {
+      width: auto;
+      object-fit: contain;
+      background-color: #fff;
+      color: #fff;
+      border-radius: 12px 12px 12px 12px!important;
+      
+  
+    } 
+  }
+
+  
+  @media (max-width:905px){
+    .product-img-container{
+      height: 85%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 859px){
+    .product-img-container{
+      height: 90%;
+      width: 100%;
+    }
+
+
+  }
+
+  @media(max-width:645px){
+  
+    .product-img-container{
+      height: 95%;
+      width: 100%;
+    }
+
+    .quick-look {
+     
+      padding: 0.5em 1.5em ;
+      font-size: 1em;
+      
+    }
+  
+  }
+
+  @media(max-width:500px){
+  
+
+    .quick-look {
+     
+      padding: 0.5em 1.2em ;
+      font-size: 0.8em;
+      
+    }
+  
+  }
+
+  @media(max-width:645px){
+  
+    .product-img-container{
+      height: 95%;
+      width: 100%;
+    }
+    .card-title{
+      font-size: 0.8rem;
+    }
+  
+  }
+
+  @media(max-width:645px){
+  
+  
+    .card-title{
+      font-size: 0.8rem;
+    }
+    .card-text{
+      font-size: 0.8rem;
+    }
+  
+  }
+
+  @media(max-width:350px){
+    
+   .product-img-container{
+    height: 100%;
+   }
+  }
+

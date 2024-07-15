@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
+.hero-container{
+    background-color: #444444;
+    height: calc(100vw * (828 / 1592));
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    background-position: center;
+    contain: content;
+}
+
+
+.rarewrld{
+ font-size: calc(10vw)!important;
+ background-color: #966E4F;
+ width: 63%;
+ color:#FCFAF7 ;
+ font-family: "lancelot";
+ margin-left:4%;
+ margin-bottom: 2%;
+ padding-left: 4%;
+ padding-bottom: 0;
+}
+
+
+.explore{
+  font-size: calc(10vw)!important;
+  background-color: initial;
+  color:#FCFAF7 ;
+ font-family: "lancelot";
+ margin-left:4%;
+ margin-top: 22%;
+}
+/* $primary: #FCFAF7;
+$secondary:#966E4F; */
+/* .hero-word{
+    float: left;
+    margin: 4%;
+    background-color: initial;
+    }
+
+.explore, .rare{
+    font-family: "lancelot"  ;
+    color: #ffffff;
+    font-size: 10em;
+    
+}
+
+
+
+.explore{
+    background: #966E4F;
+    padding-left: 0.3em;
+    width: 50vw;
+    font-size: calc(100%)
+}
+
+.rare{
+    background: none;
+} */
+
+/* 
+@media (max-width: 1200px) {
+  .explore{
+    font-size: 7em;
+  }
+  .rare{
+    font-size: 5em;
+  }
+  .hero-word{
+    align-self:first baseline;
+
+     }
+
+  }
+
+
+  @media (max-width: 1000px) {
+    
+    .hero-word{
+        align-self:first baseline;
+    
+         }
+      
+  } */
+
+@media (max-width: 600px) {
+    .hero-container {
+           background-image: none!important;
+           background-color: #444444!important;
+           margin: 0 4% !important;
+           min-height: 400px;
+           border-radius: 4%;
+    }
+
+    .explore{
+      font-size: calc(10vw)!important;
+      background-color: initial;
+      color:#FCFAF7 ;
+     font-family: "lancelot";
+     margin-left:4%;
+     margin-top: 40%;
+    }
+
+    /* .explore{
+        font-size: 4em;
+      }
+      .rare{
+        font-size: 2em;
+      }
+      
+      .hero-word{
+        align-self:first baseline;
+    
+         } */
+  }
+  /* @media (max-width: 900px) {
+    .container-fluid {
+         
+           background-color: #444444;
+           margin-left:4% !important;
+           margin-right:4% !important;
+           width: 100%;
+           
+           
+    }
+    .explore{
+        font-size: 5em;
+      }
+      .rare{
+        font-size: 3em;
+      }
+      
+      .hero-word{
+        align-self:first baseline;
+    
+         } */
+
+  
+
+
+  /* @media (max-width: 400px) {
+   .hero-container 
+          { 
+           background-color: #444444;
+           margin: 0 4% !important;
+           height: 70%;
+           border-radius: 4%;
+    }
+    .explore{
+        font-size: 0.5em;
+      }
+      .rare{
+        font-size: 1em;
+      }
+      .hero-word{
+        align-self:first baseline;
+    
+         }
+        } 
+  
+
+    } */
+
+    
+ 
+     

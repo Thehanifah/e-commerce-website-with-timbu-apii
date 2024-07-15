@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.brown{
+    background-color: #966E4F;
+    height: 30px;
+    width: 100%;
+    margin: 0% !important;
+    padding: 0!important;
+}
+.media{
+    font-size: 2em;
+}
+div.footer-cont {
+    margin: 4% !important;
+    padding: 0!important;
+    display: flex;
+   
+    justify-content: space-between;
+}
+
+.copyright{
+    margin: 4% !important;
+    padding: 0!important;
+    display: flex;
+   
+    justify-content: space-between;
+}
+.ul-container a, .ul-container1 a{
+    text-decoration: none;
+   color: #966E4F!important;
+    padding-left: 1em;
+    width: fit-content!important;
+    font-style: 'monteserrat';
+   
+}
+
+.ul-container, .ul-container1{
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+
+.ul-container a:hover .ul-container1 a:hover{
+    color: #966E4F!important;
+}
+
+.footerbrand{
+    width: fit-content!important;
+   
+  
+}
+
+
+.hro{
+   color: #ccc;
+   margin: 4%!important;
+}
+
+
+
+.copyright-word{
+    color: #966E4F;
+  font-family: 'monteserrat';
+}
+
+.copyright-logo{
+ color: #966E4F;
+ font-size: 2em;
+}
+
+.copyright{
+    margin: 4%!important;
+}
+
+
+
+@media(max-width:840px){
+    div.footer-cont {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
+    
+        align-items: center;
+        justify-content: flex-start;
+        height: 300px;
+        margin-bottom: 0;
+    }
+
+
+    .copyright-word{
+        padding-top: 1em;
+        margin: 0 4%;
+        border-top: 1px solid #ccc;
+        padding-top: 2em;
+        width: 92vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright{
+        display: flex;
+        flex-direction: column-reverse;
+    
+        align-items: center;
+        justify-content: center;
+        margin-top: 0%; 
+    }
+
+    .hro{display: none;} 
+
+    .ul-container, .ul-container1{
+        width: fit-content!important;
+        height: 1.5em;
+       display: flex;
+       align-items: center;       
+    }
+
+
+    .ul-container1{
+        margin-bottom: 1em;
+    }
+    
+
+    .ul-container{
+        display: block;
+        margin: 2em;
+    }
+
+
+  
+    .ul-container div {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding: 0.5em;
+    }
+
+    .ul-container div a{
+        width: fit-content;
+        margin: auto;
+    }
+
+    .ul-container a, .ul-container1 a{
+        display: inline-block;
+       
+    }
+
+   
+}
