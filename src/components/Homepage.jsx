@@ -3,14 +3,14 @@ import Hero from './Hero';
 import Heading from './Heading';
 import Footer from './Footer';
 import ProductList from './ProductList';
-import Newproducts from './Newproducts';
+
 
 function Homepage({ products, isSearching, filteredProducts}) {
     return (
       <div className="App">
         {!isSearching && <Hero />}
         <Heading />
-        {/* <Newproducts/> */}
+    
         <ProductList  products={products} filteredProducts={filteredProducts}/>
         <Footer />
       </div>
