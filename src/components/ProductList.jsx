@@ -19,7 +19,7 @@ const ProductList = ({ products, filteredProducts }) => {
   return (
     <div className="container-box">
       <div className="grid-container">
-        {currentProducts.map(product => (
+        {products.map(product => (
           <div className="grid-item" key={product.id}>
             <ProductCard product={product} />
           </div>
