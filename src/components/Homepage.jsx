@@ -10,8 +10,7 @@ function Homepage({ products, isSearching, filteredProducts}) {
       <div className="App">
         {!isSearching && <Hero />}
         <Heading />
-    
-        <ProductList  products={products} filteredProducts={filteredProducts}/>
+            <ProductList  products={products} filteredProducts={filteredProducts}/>
         <Footer />
       </div>
     );
