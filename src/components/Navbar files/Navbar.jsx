@@ -94,7 +94,7 @@ const Navbar = ({ products, onSearch, onSearchStateChange }) => {
           <Link className="nav-link active" to="/shop"><PiHandbagSimpleThin className="nav-item-icon" /> <span>Shop</span></Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href=""><CiUser className="nav-item-icon" /><span>Profile</span></a>
+          <a className="nav-link active" aria-current="page" href="/"><CiUser className="nav-item-icon" /><span>Profile</span></a>
         </li>
       </ul>
 
