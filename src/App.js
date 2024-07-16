@@ -25,12 +25,23 @@ function App() {
     const fetchProducts = async () => {
       try {
       
-
-        const url = `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=${organizationId}&reverse_sort=false&page=1&size=36&Appid=${appId}&Apikey=${apiKey}`;
         
-        const response = await axios.get(url);
+        const url = `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=${organizationId}&reverse_sort=false&page=1&size=36&Appid=${appId}&Apikey=${apiKey}`;
+        const response = await axios.get(url, {
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+  
+        console.log('API Response:', response);
+  
+        if (!response.data || !response.data.items) {
+          throw new Error('No data or items found in API response');
+        }
+        
         console.log(response);
-
+        
+      
         const data = response.data.items.map(item => ({
           id: item.id,
           name: item.name,
