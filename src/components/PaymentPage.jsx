@@ -24,7 +24,6 @@ const PaymentPage = () => {
 
   const handlePayment = (e) => {
     e.preventDefault();
-    // Here you would process the payment
     alert('Payment successful!');
     navigate('/');
   };
@@ -37,7 +36,7 @@ const PaymentPage = () => {
         <input type="text" name="cardNumber" placeholder="Card Number" value={paymentData.cardNumber} onChange={handleChange} required />
         <input type="text" name="expiryDate" placeholder="Expiry Date (MM/YY)" value={paymentData.expiryDate} onChange={handleChange} required />
         <input type="text" name="cvv" placeholder="CVV" value={paymentData.cvv} onChange={handleChange} required />
-        <button type="submit" className='pay'>Pay ${((formData.totalPrice + 15) * 1.07).toFixed(2)}</button>
+        <button type="submit" className='pay'>Pay ${((formData.totalPrice + 10) * 1.07).toFixed(2)}</button>
       </form>
     </div>
     <Footer/>

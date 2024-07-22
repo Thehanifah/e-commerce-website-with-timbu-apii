@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CheckoutForm.css';
 import Footer from './Footer';
-import { CartContext } from './Cartcontext'; // Import CartContext
+import { CartContext } from './Cartcontext';
 
 const CheckoutForm = () => {
   const { cart } = useContext(CartContext);
@@ -16,7 +16,7 @@ const CheckoutForm = () => {
     city: '',
     state: '',
     zipCode: '',
-    totalPrice: totalPrice // Include totalPrice in formData
+    totalPrice: totalPrice 
   });
 
   const navigate = useNavigate();
