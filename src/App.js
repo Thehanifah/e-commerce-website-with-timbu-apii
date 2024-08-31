@@ -27,7 +27,7 @@ function App() {
         const appId = process.env.REACT_APP_APP_ID;
         const apiKey = process.env.REACT_APP_API_KEY;
         
-        const url = `https://api.timbu.cloud/products?organization_id=${organizationId}&reverse_sort=false&page=1&size=36&Appid=${appId}&Apikey=${apiKey}`;
+        const url = `https://api.timbu.cloud/products?organization_id=${organizationId}&page=1&size=36&Appid=${appId}&Apikey=${apiKey}`;
         const response = await axios.get(url, {
           headers: {
             'Accept': 'application/json'
