@@ -20,7 +20,7 @@
 }
 
 .App{
-    width: 100vw;
+    max-width: 1040;
     min-height: 100vh;
 
 }
