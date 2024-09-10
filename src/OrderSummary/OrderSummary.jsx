@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { useLocation, useNavigate} from 'react-router-dom';
 import Footer from './Footer';
 import './OrderSummary.css';
-import { CartContext } from './Cartcontext'; 
+import { CartContext } from '../../context/Cartcontext'; 
 
 const OrderSummary = () => {
   const location = useLocation();

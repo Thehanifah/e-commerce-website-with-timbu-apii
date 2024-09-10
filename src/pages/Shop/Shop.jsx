@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProductCard from './Productcards';
+import ProductCard from '../../components/ProductCard/Productcards';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import './Shop.css';
 

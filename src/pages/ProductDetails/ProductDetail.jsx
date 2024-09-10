@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import Footer from './Footer';
+import Footer from '../../components/Footer/Footer';
 import './ProductDetail.css';
-import { CartContext } from './Cartcontext'; // Import CartContext
+import { CartContext } from '../../context/Cartcontext'; // Import CartContext
 
 const ProductDetail = ({ products }) => {
   const { productId } = useParams();

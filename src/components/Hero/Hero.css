@@ -4,7 +4,7 @@
 .hero-container{
     background-color: #444444;
     height: calc(100vw * (828 / 1592));
-    background-image: url(../images/hero.png);
+    background-image: url(../../images/hero.png);
     background-size: cover;
     background-position: center;
     contain: content;

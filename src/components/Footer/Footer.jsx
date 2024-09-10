@@ -1,5 +1,5 @@
 import './Footer.css'
-import Logo from '../images/logo.png'
+import Logo from '../../images/logo.png'
 import { PiCopyrightLight } from "react-icons/pi";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";

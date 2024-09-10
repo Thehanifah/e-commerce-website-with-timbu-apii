@@ -1,8 +1,8 @@
 import React from 'react';
-import Hero from './Hero';
-import Heading from './Heading';
-import Footer from './Footer';
-import ProductList from './ProductList';
+import Hero from './Hero/Hero';
+import Heading from './Header/Heading';
+import Footer from './Footer/Footer';
+import ProductList from '../pages/ProductList/ProductList';
 
 
 function Homepage({ products, isSearching, filteredProducts}) {
@@ -23,27 +23,4 @@ export default Homepage;
 
 
 
-
-
-// import React from 'react'
-// import Navbar from './Navbar files/Navbar';
-// import Hero from './Hero'
-// import Heading from './Heading';
-// import Footer from './Footer';
-// import ProductList from './ProductList';
-// import Shop from './Shop';
-
-// function Homepage() {
-//   return (
-//     <div className="App">
-//      <Navbar/>
-//      <Hero/>
-//      <Heading/>
-//      <ProductList/>
-//      <Footer/>
-//     </div>
-//   )
-// }
-
-// export default Homepage
 

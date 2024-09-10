@@ -8,7 +8,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { IoIosMenu } from "react-icons/io";
 import { CiUser } from "react-icons/ci";
 import { Link, useNavigate } from 'react-router-dom';
-import { CartContext } from '../Cartcontext';
+import { CartContext } from '../../context/Cartcontext';
 import { useContext } from 'react';
 
 

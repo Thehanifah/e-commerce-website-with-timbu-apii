@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CheckoutForm.css';
-import Footer from './Footer';
-import { CartContext } from './Cartcontext';
+import Footer from '../../components/Footer/Footer';
+import { CartContext } from '../../context/Cartcontext';
 
 const CheckoutForm = () => {
   const { cart } = useContext(CartContext);

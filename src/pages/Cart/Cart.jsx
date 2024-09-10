@@ -1,7 +1,7 @@
 import React, { useContext} from 'react';
-import { CartContext } from './Cartcontext';
+import { CartContext } from '../../context/Cartcontext';
 import './Cart.css';
-import Footer from './Footer';
+import Footer from '../../components/Footer/Footer';
 import { IoCartOutline } from "react-icons/io5";
 
 

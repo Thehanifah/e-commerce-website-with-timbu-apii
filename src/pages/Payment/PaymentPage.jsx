@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './PaymentPage.css';
-import Footer from './Footer';
+import Footer from '../../components/Footer/Footer';
 
 const PaymentPage = () => {
   const [paymentData, setPaymentData] = useState({

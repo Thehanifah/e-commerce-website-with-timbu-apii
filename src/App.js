@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Homepage from './components/Homepage';
-import Shop from './components/Shop';
+import Shop from './pages/Shop/Shop';
 import Navbar from './components/Navbar files/Navbar';
-import Cart from './components/Cart';
-import CartProvider from './components/Cartcontext';
-import ProductDetail from './components/ProductDetail';
-import CheckoutForm from './components/CheckoutForm';
-import OrderSummary from './components/OrderSummary';
-import PaymentPage from './components/PaymentPage';
+import Cart from './pages/Cart/Cart';
+import CartProvider from './context/Cartcontext';
+import ProductDetail from './pages/ProductDetails/ProductDetail';
+import CheckoutForm from './pages/Checkout/CheckoutForm';
+import OrderSummary from './pages/OrderSummary/OrderSummary';
+import PaymentPage from './pages/Payment/PaymentPage';
 import productsData from './productsData';
 
 
