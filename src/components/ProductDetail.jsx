@@ -10,27 +10,41 @@ const ProductDetail = ({ products }) => {
 
   const [quantity, setQuantity] = useState(1); 
   const [selectedSize, setSelectedSize] = useState('S'); 
-  const { addToCart } = useContext(CartContext); 
+  const {cart, addToCart } = useContext(CartContext); 
   const [showNotification, setShowNotification] = useState(false); 
+  const [showAvailabilityError, setShowAvailabilityError] = useState(false);
+  const currentCartProduct = cart.find(p => p.id === productId) || { quantity: 0 };
 
 
 
   const increaseQuantity = () => {
-    if (quantity < product.Qty) {
+
+    if (currentCartProduct.quantity + quantity < product.Qty)
+     {
       setQuantity(quantity + 1);
+    } else{
+      setShowAvailabilityError(true);
+      setTimeout(() => setShowAvailabilityError(false), 3000); 
     }
   };
 
   const decreaseQuantity = () => {
     if (quantity > 1) {
       setQuantity(quantity - 1);
+      setShowAvailabilityError(false);
     }
   };
 
   const handleAddToCart = () => {
-    addToCart({ ...product, selectedSize }, quantity); 
-    setShowNotification(true); 
-    setTimeout(() => setShowNotification(false), 3000); 
+   
+    if (currentCartProduct.quantity + quantity <= product.Qty){
+      addToCart({ ...product, selectedSize }, quantity); 
+      setShowNotification(true); 
+      setTimeout(() => setShowNotification(false), 3000); 
+    }else{
+      setShowAvailabilityError(true);
+      setTimeout(() => setShowAvailabilityError(false), 3000); 
+    }
   };
 
   if (!product) {
@@ -88,6 +102,12 @@ const ProductDetail = ({ products }) => {
               Product added to cart!
             </div>
           )}
+
+            {showAvailabilityError && (
+              <div className="notification">
+                We have only {product.Qty} of this product in stock.
+              </div>
+            )}
       </div>
       </div>
       <Footer />

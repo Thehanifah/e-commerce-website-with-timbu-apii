@@ -9,7 +9,8 @@ import { IoIosMenu } from "react-icons/io";
 import { CiUser } from "react-icons/ci";
 import { Link, useNavigate } from 'react-router-dom';
 import { CartContext } from '../Cartcontext';
-import { useContext } from 'react'
+import { useContext } from 'react';
+
 
 const Navbar = ({ products, onSearch, onSearchStateChange }) => {
   const { cart } = useContext(CartContext);
@@ -40,7 +41,7 @@ const Navbar = ({ products, onSearch, onSearchStateChange }) => {
 
   const handleClearSearch = () => {
     setSearchInput("");
-    onSearchStateChange(false);
+    
   };
 
   const handleSearch = () => {
@@ -49,7 +50,7 @@ const Navbar = ({ products, onSearch, onSearchStateChange }) => {
         product.name.toLowerCase().includes(searchInput.trim().toLowerCase())
       );
       onSearch(filteredProducts);
-      setSearchInput("");
+      // setSearchInput("");
       navigate('/');  
     }
   };

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext} from 'react';
 import { CartContext } from './Cartcontext';
 import './Cart.css';
 import Footer from './Footer';
@@ -7,6 +7,8 @@ import { IoCartOutline } from "react-icons/io5";
 
 const Cart = () => {
   const { cart, setCart, } = useContext(CartContext);
+
+  
   
 
   const totalPrice = cart.reduce((acc, item) => acc + item.current_price * item.quantity, 0);
@@ -14,8 +16,13 @@ const Cart = () => {
 
   const handleIncreaseQuantity = (index) => {
     const newCart = [...cart];
-    newCart[index].quantity += 1;
-    setCart(newCart);
+    const productInCart = newCart[index];
+    
+    if(productInCart.Qty > productInCart.quantity){
+       productInCart.quantity += 1;
+    setCart(newCart); 
+    }
+   
   };
 
   const handleDecreaseQuantity = (index) => {
@@ -103,6 +110,7 @@ const Cart = () => {
           {/* <button className="clear-cart-button" onClick={clearCart}>Clear Cart</button> */}
         </>
       )}
+  
       <Footer/>
     </div>
   );

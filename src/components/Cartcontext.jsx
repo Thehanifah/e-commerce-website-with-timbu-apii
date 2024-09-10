@@ -15,13 +15,26 @@ const CartProvider = ({ children }) => {
   const addToCart = (product, quantity) => {
     setCart(prevCart => {
       const existingProduct = prevCart.find(item => item.id === product.id && item.selectedSize === product.selectedSize);
+      
       if (existingProduct) {
+        const newQuantity = existingProduct.quantity + quantity;
+        if (newQuantity > product.Qty) {
+          // Show availability message
+          alert(`Availability: We have ${product.Qty} in stock`);
+          return prevCart; // No change to the cart
+        }
+  
         return prevCart.map(item =>
           item.id === product.id && item.selectedSize === product.selectedSize
-            ? { ...item, quantity: item.quantity + quantity }
+            ? { ...item, quantity: newQuantity }
             : item
         );
       } else {
+        if (quantity > product.Qty) {
+          // Show availability message
+          alert(`Availability: We have only ${product.Qty} in stock`);
+          return prevCart; // No change to the cart
+        }
         return [...prevCart, { ...product, quantity }];
       }
     });
