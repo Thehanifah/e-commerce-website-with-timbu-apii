@@ -64,10 +64,11 @@ function App() {
           description: item.description,
           Qty: item.available_quantity,
           current_price: item.current_price && item.current_price[0] && item.current_price[0].USD && item.current_price[0].USD[0] !== null ? item.current_price[0].USD[0] : 'N/A',
-          photoUrl: item.photos && item.photos[0] ? `https://api.timbu.cloud/images/${item.photos[0].url}` : '',
+          photoUrl: item.photos?.[0]?.url ? `https://api.timbu.cloud/images/${item.photos[0].url}` : '',
           categories: item.categories?.map(category => category.name),
         }));
         setProducts(data);
+        console.log(data);
         setFilteredProducts(data);
       }
     };
